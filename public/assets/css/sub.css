@@ -1,0 +1,66 @@
+.subpagetext{
+    color: aliceblue;
+    border-style: none;
+}
+
+.subbtn:hover{
+    background-color: #009499;
+}
+
+.subcart{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 375px){
+    .imgprixabo2{
+        margin-left: 80px;
+    }
+
+    .subbtn{
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 425px){
+    .imgprixabo2{
+        margin-left: 109px;
+    }
+
+    .subbtn{
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 768px){
+    .imgprixabo2{
+        margin-left: 260px;
+    }
+
+    .subbtn{
+        margin-left: 250px;
+    }
+}
+
+@media (min-width: 1024px){
+    .imgprixabo2{
+        margin-left: 375px;
+    }
+
+    .subbtn{
+        margin-left: 365px;
+    }
+}
+
+@media (min-width: 1920px){
+    .imgprixabo2{
+        margin-left: 560px;
+    }
+
+    .subbtn{
+        margin-left: 550px;
+    }
+}
+
+
+

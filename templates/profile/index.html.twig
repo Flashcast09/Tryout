@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur votre page perso{% endblock %}
+
+{% block body %}
+    <div>
+        <p class="parasub">Bienvenue sur votre page perso {{app.user.lastname}} </p>
+
+    </div>
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success" role="alert">
+                    {{message}}
+                </div>
+            {% endfor %}
+<section class="container profilcard">
+    <div class="card profilcard" style="width: 19rem; ">
+    <img  src="{{asset('images/zyzzash.jpg')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <p class="card-text phototext">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="row justify-content-center">
+                <div class="col-6 infocard">
+                    <p>Nom:</p>
+                    <p>Prénom:</p>
+                    <p>Email:</p>
+                </div>
+                <div class="col-6">
+                    <p>{{app.user.firstname}}</p>
+                    <p>{{app.user.lastname}}</p>
+                    <p>{{app.user.email}}</p>
+                </div>
+            </div>
+            <a href="{{ path('profile_modifier_profil') }}" class="btn btn-primary modifbtn">Modifier le profil</a>
+            <a href="{{ path('profile_motdepasse') }}" class="btn btn-primary modifbtn">Modifier le mot de passe</a>
+    </div>
+    </div>
+</section>
+ 
+{% endblock %}

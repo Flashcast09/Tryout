@@ -1,0 +1,447 @@
+/* MAIN MENU PRESENTATION ACCUEIL */
+
+.titreaccueil{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.cardoneimg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    border-radius: 50px;
+    transition: all .15s ease-in-out;
+    
+}
+
+.cardoneimg:hover{
+    transform: scale(1.1);
+}
+
+.titrecard{
+    position: absolute;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.cardtwoimg{
+    height: 203px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    border-radius: 50px;
+    transition: all .15s ease-in-out;
+}
+
+.cardtwoimg:hover{
+    transform: scale(1.1);
+}
+
+.titrecard2{
+    
+    position: absolute;
+    color: #ffffff;
+    font-size: 26px;
+    
+}
+
+.readybande{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #ffffff;
+    background: linear-gradient(#fff,90%,#004A4D );
+    z-index: 5;
+}
+
+
+
+.textbande{
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+   
+    text-align: center;
+    z-index: 3;
+    margin: -20px -5px -20px;
+}
+
+.shadowabo{
+    margin-top: 30px;
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+#titreoffre{
+    color: #fff;
+    text-align: start;
+    
+}
+
+.simple{
+    margin-left: 20px;
+    font-size: 2rem;
+    display: block;
+    line-height: 2rem;
+    
+}
+
+.formule{
+    margin-left: 20px;
+    font-size: 2rem;
+    display: block;
+    
+}
+
+.offreprix img{
+    display: block;
+    max-width: 100%;
+    margin-left: 0 ;
+    margin-top: 60px;
+    width: 150px;
+    
+    
+    
+}
+
+.listeavantages{
+    
+    display: block;
+    justify-content: flex-end;
+    margin-left: 150px;
+    margin-top: -130px;
+    
+}
+
+.listeav{
+    display: block;
+    padding:1px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    margin: 5px;
+    transition: all .15s ease-in-out;
+            
+}
+
+.listeav:hover{
+    transform: scale(1.1);
+}
+
+
+.btnadherant{
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-style: none;
+
+}
+
+.btnadherant:hover{
+    color: #fff;
+    background-color: #009499;
+    border-style: none;
+}
+
+.btnadherant2{
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #fff;
+   
+}
+
+
+.aostry{
+    background-color: #fff;
+    
+}
+
+.textaostest{
+    color: black;
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    margin:30px;
+    
+}
+
+.appimg{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 40px;
+    /* transition: all .2s ease-in-out; */
+}
+
+
+
+.appstoreimg{
+    width: 170px;
+    /* margin-left: 40px; */
+    margin-bottom: 15px;
+    border-style: none;
+    /* transition: all .2s ease-in-out; */
+    
+    
+}
+
+.focusappstore{
+    transition: all .2s ease-in-out;
+}
+
+.focusappstore:hover{
+    transform: scale(1.2);
+}
+
+
+
+.googleplayimg{
+    width: 170px;
+    /* margin-left: 40px; */
+    border-style: none;
+}
+
+.phonezyzz{
+    margin-top: 25px;
+    margin-right: 48px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media (min-width: 320px){
+    .appstoreimg{
+        margin-left: 35px;
+    }
+
+    .googleplayimg{
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 375px){
+
+    .cardtwoimg{
+        width: 375px;
+        height: 233px;
+    }
+
+    .appstoreimg{
+        margin-left: 60px;
+    }
+
+    .googleplayimg{
+        margin-left: 60px;
+    }
+    
+    .phonezyzz{
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 425px){
+
+    .cardtwoimg{
+        width: 425px;
+        height: 261px;
+    }   
+    
+    .appstoreimg{
+        margin-left: 85px;
+    }
+
+    .googleplayimg{
+        margin-left: 85px;
+    }
+
+    .phonezyzz{
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 768px){
+
+    
+
+    .imagex3{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+     .cardoneimg{
+        width: 260px;
+        height: 150px;
+        padding: 5px;
+        margin-top: 30px;
+        margin-left: 530px;
+       
+    }
+
+    .cardtwoimg{
+        width: 260px;
+        height: 150px;
+        padding: 5px;
+        margin-top: 30px;
+        margin-left: 530px;
+    }
+
+    .titrecard{
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 530px;
+        color: #ffffff;
+        font-size: 26px;
+    }
+
+    .titrecard2{
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 530px;
+        color: #ffffff;
+        font-size: 26px;
+    } 
+
+    .textbande{
+        margin-right: 15px;
+    }
+
+    
+
+    .btnadherant{
+        margin-top: 130px;
+        margin-left: 40px;
+    }
+
+    
+    .aostry{
+        
+        display: flex; 
+        justify-content: center;
+        
+    }
+
+    .textaostest{
+        margin-right: 50px;
+    }
+
+    .appstoreimg{
+        margin-left: 50px;
+    }
+    .googleplayimg{
+        margin-left: 50px;
+    }
+
+    .phonezyzz{
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    
+
+    .imagex3{
+       
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .cardoneimg{
+        width: 350px;
+        height: 200px;
+        margin-right:540px;
+    }
+
+    .cardtwoimg{
+        width: 350px;
+        height: 200px;
+        margin-right:540px;
+    }
+    
+    .titrecard{
+        position: absolute;
+        margin-top: 40px;
+        margin-right: 540px;
+        color: #ffffff;
+        font-size: 26px;
+    }
+
+    .titrecard2{
+        position: absolute;
+        margin-top: 40px;
+        margin-right: 540px;
+        color: #ffffff;
+        font-size: 26px;
+    }
+
+    .shadowabo{
+        display: flex;
+        
+    }
+
+    
+
+    .simple{
+        font-size: 45px;
+        
+    }
+
+    .formule{
+        font-size: 45px;
+    }
+
+    .btnadherant{
+        margin-top: 180px;
+        margin-left: 150px;
+    }
+
+    .aostry{
+        display: flex;
+        justify-content: center;
+    }
+
+    .appstoreimg{
+        margin-left: 290px;
+        width: 250px;
+    
+    }
+
+    .googleplayimg{
+        margin-left: 290px;
+        width: 250px;
+    }
+
+    .phonezyzz{
+        margin-left: 230px;
+        font-size: 50px;
+    }
+}
+

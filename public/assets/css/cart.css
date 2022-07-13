@@ -1,0 +1,27 @@
+
+.btnactionpanier{
+    transition: all .1s ease-in-out; 
+}
+
+.btnactionpanier:hover{
+    transform: scale(1.4) ;
+}
+
+.tablepanier{
+    color: #fff;
+}
+
+.quantitechange a{
+    margin-left: 5px;
+}
+
+.checkpanier{
+    transition: all .2s ease-in-out;
+}
+
+.checkpanier:hover{
+    transform: scale(1.1);
+}
+
+
+

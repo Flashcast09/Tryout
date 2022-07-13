@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}<h1>N'hésitez pas à vous saisir d'un maximum de drogues dans notre shop !</h1>{% endblock %}
+
+{% block body %}
+
+
+
+<main class="container">
+    <section class="row">
+        <div class="col-12">
+        
+            <h2>Liste des produits de la catégorie </h2>
+        </div>
+        {# {% for product in products %} #}
+        <div class="col-3 mb-3">
+            <div class="card h-100 ">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        {# {{product.name}} #}
+                    </h2>
+                    <p class="card-text">
+                        {# {{product.description}} #}
+                    </p>
+                    <a href="#" class="btn btn-danger">
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        {# {% endfor %} #}
+    </section>
+</main>
+{% endblock %}

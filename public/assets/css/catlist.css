@@ -1,0 +1,38 @@
+.cardall{
+    opacity: 0.95;  
+}
+
+.encarscomplet{
+    margin: 10px 20px 10px 20px;
+    
+}
+
+.btncard{
+    align-items: flex-end;
+    color: #fff;
+}
+
+.btncard:hover{
+    background-color: #004A4D;
+    color: #fff;
+    
+}
+
+.card{
+    /* margin: px; */
+    color: #000000;
+    
+}
+
+.texteproduits{
+    color: rgba(255, 254, 254, 0.91);
+    margin-left: 20px;
+}
+
+.articleprix{
+    font-size: 20px;
+}
+
+.description{
+    font-size: 18px;
+}

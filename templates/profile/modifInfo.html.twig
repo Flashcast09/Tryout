@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modification du profil{% endblock %}
+
+{% block body %}
+<h1 style="color: #fff; margin-left: 20px;" >Vous pouvez modifiez vos informations personnelles ici</h1>
+<h2 class="mt-4" style="color: #fff;">Modification des infos</h2>
+<div class="container forminfos">
+    
+{% for message in app.flashes('warning') %}
+<div class="alert alert-warning mt-4">
+    {{message}}
+</div>
+{% endfor %}
+{% for message in app.flashes('success') %}
+<div class="alert alert-success mt-4">
+    {{success}}
+</div>
+    
+{% endfor %}
+    {{form(form)}}
+
+</div>
+{% endblock %}

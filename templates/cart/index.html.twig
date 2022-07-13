@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Votre panier{% endblock %}
+
+{% block body %}
+
+
+
+
+    <section class=" bg-light p-3" >
+        <h1 >Votre panier</h1>
+    </section>
+    <div class=" container paniersize card mb-4  ml-2" style="background-color: #004A4D;">
+    <div class="card-body p-4">
+    <table class="table"  style="background-color: #004A4D;">
+        <thead class="tablepanier">
+            <tr>
+                
+                <th class="small  mb-4 pb-2">Produit</th>
+                <th class="small  mb-4 pb-2">Prix</th>
+                <th class="small  mb-4 pb-2">Quantité</th>
+                <th class="small  mb-4 pb-2">Total</th>
+                <th class="small  mb-4 pb-2">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="tablepanier p-3">
+            {% for element in dataPanier %}
+                <tr>
+                    <td>{{ element.produit.name }}</td>
+                    <td class="text-start">{{ element.produit.price }} €</td>
+                    <td>{{ element.quantite }}</td>
+                    <td class="text-start">{{ element.quantite * element.produit.price }} €</td>
+                    <td>
+                        <a href="{{path("cart_add", {id: element.produit.id})}}" class="btn btnactionpanier" style="color: #fff; font-size: 23px;">
+                            <i class="bi bi-plus-square"></i>
+                        </a>
+                        <a href="{{path("cart_remove", {id: element.produit.id})}}" class="btn btnactionpanier" style="color: #fff; font-size: 23px;">
+                            <i class="bi bi-dash-square"></i>
+                        </a>
+                        <a href="{{path("cart_delete", {id: element.produit.id})}}" class="btn btnactionpanier" style="color: #fff; font-size: 23px;">
+                            <i class="bi bi-x-square"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="5" class="text-center">Votre panier est vide</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot class="tablepanier">
+            <tr>
+                <td colspan="3">Total</td>
+                <td class="text-start">{{ total }} €</td>
+                <td>
+                    <a href="{{path("cart_delete_all")}}" class="btn btnactionpanier" style="color: #fff; font-size: 23px;">
+                        <i class="bi bi-x-square"></i>
+                    </a>
+                    
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <form action="/checkout" method="POST" class="checkout " >
+    <input type="hidden" name="test" value="{{total * 100}}" />
+         <button type="submit" class="btn btn-lg checkpanier" style="background-color: #fff; color: black; border-style: none;">Payer</button>
+    </form>  
+    </div>
+    </div>
+    
+    
+{% endblock %}

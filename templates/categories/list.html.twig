@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}N'hésitez pas à vous saisir d'un maximum de drogues dans notre shop !{% endblock %}
+
+{% block body %}
+
+<main class="">
+    <section class="row">
+        <div class="col-12">
+            <h1 class="texteproduits">Tous les produits de la catégorie {{category.name}}</h1>
+            <h1 class="texteproduits">Retrouvez la meilleure selection de produits pour vous!</h1>
+        </div>
+        {% for product in products %}
+        <div class="col-md-4 encarscomplet">
+            <div class="card h-100 ">
+            <img src="{{asset('upload/images/products/')}}{{product.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        {{product.name}}
+                    </h2>
+                    <p class="card-text description">
+                        {{product.description|raw}}
+                    </p>
+                    <p class="articleprix">{{product.price}}€</p>
+                   
+                    <a href="{{path('cart_add', {id: product.id}) }}"  class="btn btn-danger btncard">
+                        Ajouter au panier
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SubController!{% endblock %}
+
+{% block body %}
+<section class="container">
+    <div class="substart subpagetext">Rejoindre les sick kant </div>
+    <div class="arrowtest subpagetext"><i class="fa-solid fa-arrow-down fa-2xl"></i></div>
+    <div>
+        <img class="imgprixabo2" src="images/prixabo.png" alt="">
+    </div>
+    <a class="btn btn-primary subbtn subpagetext" href="{{ path('subscription') }}">Devenir adhérant !
+            <i class="bi bi-caret-right-fill"></i>
+    </a>
+</section>
+<section class="container">
+    <div>
+        <p class="parasub subpagetext">
+            Profitez des meilleurs équipements pour optimiser vos performances et vos gains
+        </p>
+        <p class="parasub subpagetext">
+            Rien n'est laissé au hasard vous trouverez les meilleurs produits dans notre boutique <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i>
+            <a href="{{ path('categories_index') }}"> Le Shop</a>
+        </p>
+    </div>
+</section>
+
+{% endblock %}

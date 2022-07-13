@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+
+<div class="form-group container boite">
+    <form class="formjs">
+        <h1 class="labelform">Infos</h1>
+        <label class="labelform" for="nom">Nom</label>
+        <input class="form-control nom inputform" type="text" placeholder="Dupont ">
+
+
+        <label class="labelform" for="prenom">Prénom</label>
+        <input class="form-control prenom inputform" type="text" placeholder="Michel">
+
+
+        <label class="labelform" for="date">Date</label>
+        <input class="form-control date inputform" type="date" placeholder="01/01/2020">
+
+
+        <label class="labelform" for="mail">Adresse mail</label>
+        <input type="email" class="form-control mail inputform" id="mail" aria-describedby="emailHelp" placeholder="dupont.michel@domain.fr">
+
+
+        <label class="labelform" for="password">Mot de passe</label>
+        <input type="password" class="form-control pwd inputform" id="password" placeholder="Mot de passe">
+
+
+        <label class="labelform" for="cPassword">Confirmation du mot de passe</label>
+        <input type="password" class="form-control cpwd inputform" id="cPassword" placeholder="Confirmation">
+        <section class="textareaform ">
+            <label class="labelform " for="question">Posez-nous vos questions !</label>
+            <textarea name="viewport" class="textareaform " cols="20" rows="7"></textarea>
+        </section>
+        
+        <input type="submit" class="btn btnform " value="Submit">
+        
+        
+
+    </form>
+
+</div>
+   
+
+{% endblock %}
+
+

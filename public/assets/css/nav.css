@@ -1,0 +1,173 @@
+    /* NAV ET ENTETE */
+    
+
+
+.navbar{
+    
+    background-color: #ffffff; 
+    opacity: 0.95;
+    width: 100%;
+    padding: 1px;
+    
+
+}
+
+
+.entete{
+    display: grid;
+    grid-template-columns: 15% 50%;
+
+}
+
+.collapsemenu{
+    background-color: #ffffff;
+    width: 318px;
+    margin: 0;
+    padding: 10px;
+    z-index: 1;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+    color:#004A4D;
+    transition: all .1s ease-in-out;  
+   
+}
+
+.navbar-brand:hover{
+    color: #009499;
+    transform: scale(1.1) ;
+}
+
+.nav-link{
+    color: #004A4D;
+    font-weight: bold;
+    
+}
+
+.nav-link:hover{
+    color: #009499;
+    font-weight: bold;
+    
+}
+
+
+
+
+.navbar-toggler{
+
+   display: grid;
+   margin-top: 10px;
+   z-index: 5;
+    
+}
+
+ .navbar-toggler-icon{
+    color: #004A4D;
+    
+    
+    
+    border: none;  
+    
+} 
+
+img{
+   
+    width: 15vh;
+    justify-items: center;
+    display: flex;
+    margin-left: 55px;
+    
+}
+
+
+
+.btncard{
+    margin-bottom: 0px;
+    background-color: #009499;
+    border: none;
+}
+
+.titresection{
+    margin-top: 20px;
+    
+}
+
+.card-img-top{
+    margin: 0 auto;
+}
+
+
+@media (min-width: 375px){
+    *{
+        padding: 1px;
+    }
+
+    .imagetitre{
+        margin-left:15px;
+    }
+}
+
+@media (min-width: 425px){
+    .imagetitre{
+        margin-left: 40px;
+    }
+
+}
+
+@media (min-width: 768px){
+    .imagetitre{
+        margin-left: 185px;
+    }
+}
+
+@media (min-width: 1024px){
+    .imagetitre{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .imagetitre img{
+        width: 250px;
+    }
+
+    .imagetitre a{
+        font-size: 32px;
+        margin-top: 6em;
+    }
+    
+    .collapse{
+        display: inline;
+        justify-content: flex-start;
+        margin-left: 700px;
+        font-size: 20px;
+    }
+
+    
+
+    .nav-item{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav-item1{
+        margin-top: 15px;
+    }
+
+    .nav-link{
+        
+        padding: 0;
+        margin: 0;
+    }
+    .entete{
+        
+        width:100%;
+    }
+
+    .imagetitre{
+        margin: 30px;
+    }
+
+    
+}

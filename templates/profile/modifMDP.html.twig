@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<h1>Page modif du MDP</h1>
+<div class="container">
+    <h2 class="mt-4">Modification du mot de passe</h2>
+{% for message in app.flashes('danger') %}
+<div class="alert alert-warning mt-4">
+    {{message}}
+</div>
+    
+{% endfor %}
+    {{form(form)}}
+
+</div>
+{% endblock %}

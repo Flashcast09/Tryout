@@ -1,0 +1,98 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}
+<section class=" debordement div col-12">
+    <div class="titreaccueil section--title aos-init aos-animate">PROGRESSER <br> SE DEPASSER</div>
+    <div class="row imagex3">
+        <div class=" first col-md-4">
+            
+                <a href="{{ path('sub') }}" class=" cardone original--card aos-init aos-animate">
+                
+                    <img class="cardoneimg" src="{{ asset('images/cardone.jpg') }}" alt="">
+                </a>
+                
+            <div class="titrecard">Abonnement</div>
+        </div>
+        <div class=" first col-md-4">
+            <a href="#" class=" cardtwo original--card aos-init aos-animate">
+                
+                    <img class="cardtwoimg" src="{{ asset('images/tableausport.jpg') }}" alt="">
+                </a>
+                
+            <div class="titrecard2">Programmes</div>
+        </div>
+        <div class=" first col-md-4">
+            
+                <a href="{{ path('categories_index') }}" class=" cardone original--card aos-init aos-animate">
+                
+                    <img class="cardoneimg" src="{{ asset('images/cardone.jpg') }}" alt="">
+                </a>
+                
+            <div class="titrecard">Shop</div>
+    </div>
+</section>
+
+<section>
+    <div class="readybande">
+    
+        <div class="textbande">
+            ARE <br> YOU <br> READY
+        </div>
+    </div>
+    <div class="shadowabo">
+        <div class="backoffre">
+            <div id="titreoffre">
+                <div class="simple">simple et rapide</div>
+                <div class="formule">1 formule</div>
+            </div>
+            <div class="offreprix">
+                <img class="imgprix" src="images/prixabo.png" alt="">
+            </div>
+            <ul class="listeavantages ">
+                <li class="listeav">Sans engagement <br> annuel</li>
+                <li class="listeav">Carte partageable <br> par deux personnes</li>
+                <li class="listeav">Accès national illimité</li>
+            </ul>
+        </div>
+        <div>
+            <a class="btn btn-primary btnadherant" href="{{ path('sub') }}">Devenir adhérant !
+                <i class="bi bi-caret-right-fill"></i>
+            </a>
+        </div>
+        
+    </div>
+    
+</section>
+<section class="secapp">
+    <div class="aostry"> 
+        <div class="col-md-6">
+            <div class="textaostest " data-aos="fade-right" data-aos-duration="5000">
+            TOUT EST DANS
+            <br>
+            TA POCHE!
+            </div>
+            <div>
+                <p class="textaostest " data-aos="fade-right" data-aos-duration="5000">
+                Elle fera en sorte de t’aider dans tes trainings en te proposant des programmes, te permettra un suivi de ton évolution...
+                </p>
+            </div>
+            <div class="appimg">
+            
+            <a href="https://www.apple.com/fr/app-store/" target="_blank" class="focusappstore">
+                <img class="appstoreimg" data-aos="fade-left" data-aos-duration="5000" src="https://onair-fitness.fr/wp-content/themes/onair/assets/img/btn_app_itunes.png" alt="">
+            </a>
+            <a href="https://play.google.com/store/games?hl=fr&gl=US" target="_blank" class="focusappstore">
+                <img class="googleplayimg" data-aos="fade-left" data-aos-duration="5000" src="https://onair-fitness.fr/wp-content/themes/onair/assets/img/btn_app_playstore.png" alt="">
+            </a>
+            </div>
+            <div class="col-md-5 text-center phonezyzz" data-aos="fade-left" >
+                <img src="{{asset('images/zyzzportable.png')}}" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock %}

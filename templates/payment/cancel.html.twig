@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Payment Fail!{% endblock %}
+
+{% block body %}
+
+    {{ parent() }}
+
+    <h1 class="titrefail" >Thanks for your attempted order!</h1>
+    <p class="parafail">
+        We would appreciate your business!
+        But your payment failed :(
+        <a href="mailto:orders@example.com">failures@example.com</a>.
+        <a class="btn btn-primary btnretouracc" href="{{ path('main') }}">Retour à l'accueil
+                <i class="bi bi-caret-right-fill"></i>
+        </a>
+    </p>
+
+    
+
+    
+
+<div>
+
+</div>
+{% endblock %}

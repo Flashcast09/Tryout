@@ -1,0 +1,196 @@
+
+
+body{
+    background-color: #000000;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 0 auto;
+}
+
+p{
+    color: #004A4D;
+}
+
+/* PANIER PIANO PANIER PIANO PANIER PIANO */
+
+
+
+
+/* SUB INDEX */
+
+.substart{
+    display:flex;
+    justify-content: center;
+    color: #004A4D;
+    margin-top:30px;
+    font-size: 22px;
+    margin-left: 18px;
+}
+
+.arrowtest{
+    display:flex;
+    justify-content: center;
+    color: #004A4D;
+    margin-top:60px;
+    font-size: 28px;
+    margin-left: 10px;
+        
+}
+
+.imgprixabo{
+    display:flex;
+    justify-content: center;
+    margin:  0 auto;
+    margin-top: 70px;
+    width: 180px;
+
+    
+}
+
+/* PAGE SUB */
+
+.subbtn{
+    margin-top: 40px;
+    margin-left: 50px;
+    color: rgb(0, 0, 0);
+    background-color: #004A4D;
+    border-color: #004A4D;
+    
+}
+
+.imgprixabo2{
+    display:flex;
+    justify-content: center;
+    margin-left: 65px;
+    margin-top: 70px;
+    width: 180px;
+
+    
+}
+
+.parasub{
+    text-align: center;
+    padding: 5px;
+    margin-top:30px ;
+    color: #004A4D;
+}
+
+.fa-chevron-right{
+    color: #009499;
+}
+
+a{
+    
+    color: #009499;
+}
+
+
+/* PROFIL INFOS */
+.phototext{
+    color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+.infocard {
+    color: #175bda;
+}
+
+.required{
+    color: #fff;
+}
+
+.regiinsc{
+    background-color: #009499;
+    color: #fff;
+    border: none;
+}
+
+.regiinsc:hover{
+    background-color: #004A4D;
+    color: #fff;
+}
+
+.regicontainer{
+    background-color: #004A4D;
+}
+
+/* fail payment */
+
+.titrefail{
+    color: #fff;
+    padding: 10px;
+}
+
+
+.parafail{
+    margin-left: 15px;
+    color: #009499;
+    font-size: 18px;
+}
+
+.btnretouracc{
+    background-color: #009499;
+    color: #fff;
+    margin: 15px;
+    border: none;
+}
+
+/* FORM JS */
+
+.boite{
+    padding: 20px;
+}
+.formjs{
+    padding: 2%;
+    border:5px  #009499 solid;
+    border-radius: 2%;
+    background-color: rgba(136, 164, 189, 0.589);
+}
+.erreurform{
+    color:rgb(134, 0, 0);
+    font-size: 0.8em;
+    font:italic;
+}
+.titreform{
+    color:rgb(10, 10, 10);
+}
+
+.labelform{
+    margin-top: 5px;
+}
+
+.inputform{
+    box-shadow: none !important;
+}
+.inputform:focus{
+    border:rgb(180, 9, 9) 1px solid !important;
+    
+}
+.textareaform{
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea{
+    margin-top: 0;
+}
+
+
+
+.btnform{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color:  #009499;
+    border: none; 
+}
+
+@media (min-width: 780px){
+    .boite{
+        padding: 15%;
+        padding-top: 5%;
+    }
+}

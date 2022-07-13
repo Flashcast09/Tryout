@@ -1,0 +1,46 @@
+
+
+
+.background{
+    
+    background: url(../../images/boxer.jpg)  ;
+    background-size: cover ;
+}
+
+
+.menu{
+    color: #fff;
+    list-style-type: none;
+    margin: 20px 0px 10px 10px;
+}
+
+.lifooter a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.reseaux{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: 100%;
+    margin: 20px 0px 10px 10px;
+}
+
+.mailing{
+    color: #ffffff;
+}
+
+.insta{
+    color: #ffffff;
+}
+
+.spoti{
+    color: #ffffff;
+}
+
+.youtube{
+    color: rgb(255, 255, 255)
+}
